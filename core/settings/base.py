@@ -25,7 +25,8 @@ THIRD_PARTY_APPS = [
 ]
 
 PERSONAL_APPS = [
-    'apps.users.apps.UsersConfig'
+    'apps.users.apps.UsersConfig',
+    'apps.posts.apps.PostsConfig'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PERSONAL_APPS
