@@ -1,10 +1,10 @@
-from django.db import models
 from utils.model import Model
+from django.db import models
 from django_extensions.db.models import ActivatorModel, TimeStampedModel
 from django.conf import settings
 
 
-class Post(models.Model):
+class Post(ActivatorModel, TimeStampedModel, Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
